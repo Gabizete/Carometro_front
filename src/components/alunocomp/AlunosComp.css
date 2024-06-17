@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../components/fonts/Montserrat/Montserrat.ttf);
+}
+
+@font-face {
+  font-family: "MontserratL";
+  src: url(../../components/fonts/Montserrat/Montserrat-Light.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.rostoAlunos {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.aluno {
+  margin-left: 10px;
+  margin-bottom: 15px;
+  width: 20vw;
+  height: 40vh;
+  background-image: url("../../images/rosto.png");
+  background-size: 100%;
+  display: flex;
+  margin-top: 20px;
+  display: flex;
+  z-index: 0;
+  align-items: flex-end;
+}
+.sombra img {
+  width: 20vw;
+  height: 40vh;
+  filter: opacity(80%);
+  z-index: 1;
+}
+.linha {
+  width: 20vw;
+  height: 1vh;
+  background-color: #db261d;
+  position: absolute;
+  z-index: 2;
+}
+.textos {
+  z-index: 5;
+}
+.nomeAluno {
+  font-family: "Montserrat";
+  width: 283px;
+  font-size: 23px;
+  color: white;
+}
+
+.turmaAluno {
+  margin: 4px;
+  font-size: 18px;
+  font-family: "MontserratL";
+  color: white;
+  text-shadow: 0 0 8px #fff;
+}
+
+.textos {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+
+#baseAlunos:hover {
+  background-color: rgba(0, 0, 0, 0.493);
+}
+
+@media screen and (max-width: 1200px) {
+  .aluno {
+    width: 20vw;
+    height: 34vh;
+  }
+
+  .sombra img {
+    width: 20vw;
+    height: 34vh;
+    z-index: 1;
+  }
+
+  .turmaAluno {
+    margin: 2px;
+  }
+
+  .nomeAluno {
+    width: 240px;
+    font-size: 18px;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .aluno {
+    width: 38vw;
+    height: 38vh;
+  }
+
+  .nomeAluno {
+    width: 240px;
+    font-size: 20px;
+    color: white;
+  }
+
+  .sombra img {
+    width: 38vw;
+    height: 38vh;
+    z-index: 1;
+  }
+
+  .linha {
+    width: 38vw;
+    height: 1vh;
+    background-color: #db261d;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .turmaAluno {
+    margin: 6px;
+    font-size: 13px;
+    margin: 0;
+  }
+}

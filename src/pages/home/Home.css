@@ -1,0 +1,41 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../components/fonts/Montserrat/Montserrat-BoldItalic.ttf);
+}
+
+.fundoHome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../images/mulher.jpg");
+  width: 100vw;
+  height: 92vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#carometroTitulo {
+  font-family: "Montserrat";
+  font-size: 150px;
+  letter-spacing: 25px;
+  text-align: center;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  user-select: none;
+}
+
+@media screen and (max-width: 1200px) {
+  #carometroTitulo {
+    font-size: 100px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #carometroTitulo {
+    font-size: 50px;
+  }
+
+  .fundoHome {
+    background-position: 100%;
+  }
+}

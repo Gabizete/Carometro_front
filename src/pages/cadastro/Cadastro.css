@@ -1,0 +1,103 @@
+.fundoCadastro {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(./../../images/fundoLogin.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caixaCadastro {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 125vh;
+  height: 95vh;
+  background-color: #e0e0e0;
+  border-radius: 4vh;
+}
+
+.informacoesCadastro {
+  margin: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tituloCadastro {
+  display: flex;
+  justify-content: center;
+  font-size: 35px;
+  font-family: "Montserrat";
+  letter-spacing: 2.5px;
+  color: #db261d;
+  user-select: none;
+}
+
+#nomeCadastro,
+#emailCadastro,
+#senhaCadastro,
+#cpfCadastro,
+#telefoneCadastro,
+#confirmeSenhaCadastro {
+  font-size: 15px;
+  font-family: "Montserrat";
+  color: rgba(255, 255, 255, 0.755);
+  background-color: #8d8d8d;
+  width: 85vh;
+  height: 8vh;
+  border-radius: 4px;
+  margin: 10px;
+  border: 0;
+  padding-left: 15px;
+}
+
+#nomeCadastro input,
+#cpfCadastro input,
+#telefoneCadastro input,
+#emailCadastro input,
+#senhaCadastro input,
+#confirmeSenhaCadastro input,
+::-webkit-input-placeholder,
+:focus {
+  font-family: "Montserrat";
+  color: #ffffff57;
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+::-ms-reveal {
+  filter: invert(90%);
+  padding-left: 10px;
+}
+
+.botoesCadastro {
+  display: flex;
+  justify-content: space-around;
+}
+
+.botoesCadastro button {
+  color: white;
+  width: 25vh;
+  height: 4vh;
+  background-color: #db261d;
+  font-family: "Montserrat";
+  font-size: 14px;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 640px) {
+  .caixaCadastro {
+    width: 95vh;
+  }
+}

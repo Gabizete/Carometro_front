@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Montserrat-Normal";
+  src: url(../../components/fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+body {
+  background-color: #1d1d1d;
+}
+
+.tituloPesquisa {
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.tituloAlunos {
+  color: white;
+  font-size: 200%;
+  margin-bottom: 25px;
+  font-family: "Montserrat-Normal";
+}
+
+.pesquisa {
+  display: flex;
+  justify-self: center;
+}
+
+.pesquisa input  {
+  background-color: #d9d9d9;
+  width: 35vw;
+  height: 6vh;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  color: #1d1d1d;
+  border: none;
+  box-shadow: none;
+  padding-left: 15px;
+  font-family: "Montserrat-Normal";
+}
+
+.pesquisa input::placeholder{
+    color: #1d1d1d;
+}
+
+input:focus {
+  outline: none;
+}
+
+.rostoAlunos {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.consultarBotao {
+  justify-content: flex-end;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  border-left: none;
+  background-color: #d9d9d9;
+  border: none;
+  cursor: pointer;
+}
+.lupaImg {
+  width: 4vh;
+  height: 4vh;
+  margin-right: 12px;
+  display: flex;
+}
+
+.aluno{
+  margin-left: 10px;
+  margin-bottom: 15px;
+  width: 20vw;
+  height: 40vh;
+  background-image:url("../../images/rosto.png");
+  background-size: 100%;
+  display: flex;
+  margin-top: 20px;
+  display: flex;
+  z-index: 0;
+  align-items: flex-end;
+}
+
+
